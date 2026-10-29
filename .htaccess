@@ -1,0 +1,5 @@
+Options -Indexes
+
+# Serve the correct types for the browser runtime.
+AddType application/javascript .js
+AddType text/plain .py

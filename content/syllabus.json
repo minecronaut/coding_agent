@@ -1,0 +1,289 @@
+{
+  "language": "python",
+  "title": "Python, from zero to building things",
+  "destination": "You can open a blank file and build a working program — a game, a GUI app, a data tool — without needing a tutorial open next to you.",
+  "stages": [
+    {
+      "id": "s0",
+      "title": "First contact",
+      "outcome": "You can run code, store values, and understand what the machine is doing.",
+      "skills": [
+        {
+          "id": "s0.run",
+          "title": "Running Python",
+          "outcome": "Run a program and see its output",
+          "checks": ["Write and run a one-line program", "Tell the difference between an editor and a terminal", "Recognise when a program produced no output at all"]
+        },
+        {
+          "id": "s0.vars",
+          "title": "Variables",
+          "outcome": "Name a value and use it later",
+          "checks": ["Assign and reassign variables", "Predict what a variable holds after several assignments", "Explain why a bad name causes an error"]
+        },
+        {
+          "id": "s0.types",
+          "title": "Numbers and strings",
+          "outcome": "Know the difference between 7 and \"7\"",
+          "checks": ["Use ints and floats", "Build strings with quotes and escapes", "Use len(), str(), int() deliberately"]
+        },
+        {
+          "id": "s0.io",
+          "title": "print and input",
+          "outcome": "Talk to the user and read their answer",
+          "checks": ["Print multiple values", "Read input and convert it", "Debug an input that arrives as text"]
+        },
+        {
+          "id": "s0.operators",
+          "title": "Operators",
+          "outcome": "Do arithmetic and compare values",
+          "checks": ["Use + - * / // % **", "Predict integer vs float division", "Compare with == and != without mixing up = "]
+        },
+        {
+          "id": "s0.errors",
+          "title": "Reading errors",
+          "outcome": "Turn a red traceback into a fix",
+          "checks": ["Find the line an error points to", "Recognise NameError, TypeError, SyntaxError", "Fix the most common beginner mistakes"]
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "title": "Making decisions and repeating",
+      "outcome": "You can make a program react to its input and loop until it's done.",
+      "skills": [
+        {
+          "id": "s1.bool",
+          "title": "True and False",
+          "outcome": "Reason about conditions",
+          "checks": ["Use and, or, not", "Understand truthiness of 0, \"\", []", "Write a compound condition"]
+        },
+        {
+          "id": "s1.if",
+          "title": "if / elif / else",
+          "outcome": "Branch your program's behaviour",
+          "checks": ["Write multi-branch logic", "Order branches so the right one wins", "Avoid deeply nested ifs"]
+        },
+        {
+          "id": "s1.while",
+          "title": "while loops",
+          "outcome": "Repeat until a condition changes",
+          "checks": ["Write a loop that terminates", "Spot an infinite loop", "Use a counter variable correctly"]
+        },
+        {
+          "id": "s1.for",
+          "title": "for loops and range",
+          "outcome": "Repeat over a known number of things",
+          "checks": ["Use range(start, stop, step)", "Loop over a string", "Choose for over while"]
+        },
+        {
+          "id": "s1.loopctl",
+          "title": "break and continue",
+          "outcome": "Control the loop from inside",
+          "checks": ["Exit early when a condition is met", "Skip an iteration", "Use loop else without confusion"]
+        },
+        {
+          "id": "s1.patterns",
+          "title": "Loop patterns",
+          "outcome": "Build shapes, tables and sequences",
+          "checks": ["Nested loops that print a triangle", "Accumulate a running total", "Find a maximum without max()"]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Collections",
+      "outcome": "You can hold many values and get the right one back out.",
+      "skills": [
+        {
+          "id": "s2.list",
+          "title": "Lists",
+          "outcome": "Store an ordered group of things",
+          "checks": ["Create and index a list", "Change an element in place", "Know when a list is the right container"]
+        },
+        {
+          "id": "s2.listops",
+          "title": "Growing and shrinking lists",
+          "outcome": "Add, remove and sort",
+          "checks": ["append, insert, remove, pop", "Sort with a key", "Explain why remove() fails on a missing value"]
+        },
+        {
+          "id": "s2.dict",
+          "title": "Dictionaries",
+          "outcome": "Look things up by name instead of position",
+          "checks": ["Create and read a dict", "Use .get() safely", "Iterate keys and values"]
+        },
+        {
+          "id": "s2.tupleset",
+          "title": "Tuples and sets",
+          "outcome": "Pick the right shape for the data",
+          "checks": ["Use a tuple for a fixed record", "Remove duplicates with a set", "Know why sets are unordered"]
+        },
+        {
+          "id": "s2.slice",
+          "title": "Slicing",
+          "outcome": "Take a chunk out of a sequence",
+          "checks": ["Use a[start:stop:step]", "Reverse a sequence", "Say what a[-1] means"]
+        },
+        {
+          "id": "s2.comp",
+          "title": "Comprehensions",
+          "outcome": "Build a collection in one line without losing readability",
+          "checks": ["Write a list comprehension", "Add an if filter", "Know when a loop is clearer"]
+        },
+        {
+          "id": "s2.nested",
+          "title": "Nested data",
+          "outcome": "Navigate a list of dicts",
+          "checks": ["Read data['items'][0]['name']", "Loop over nested structures", "Restructure data into a summary"]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Functions and structure",
+      "outcome": "You can break a problem into pieces and reuse them.",
+      "skills": [
+        {
+          "id": "s3.def",
+          "title": "Defining functions",
+          "outcome": "Wrap behaviour behind a name",
+          "checks": ["Define and call a function", "Pass arguments", "Explain why a function with no call does nothing"]
+        },
+        {
+          "id": "s3.args",
+          "title": "Parameters",
+          "outcome": "Design a friendly function signature",
+          "checks": ["Use defaults", "Use keyword arguments", "Know when to use *args"]
+        },
+        {
+          "id": "s3.return",
+          "title": "Returning values",
+          "outcome": "Send a result back instead of printing it",
+          "checks": ["Return and capture a value", "Return multiple values", "Tell print() from return"]
+        },
+        {
+          "id": "s3.scope",
+          "title": "Scope and mutation",
+          "outcome": "Understand what a function can see and change",
+          "checks": ["Explain local vs global", "Predict what happens when a list is passed in", "Avoid accidental shared state"]
+        },
+        {
+          "id": "s3.modules",
+          "title": "import and the standard library",
+          "outcome": "Use code you didn't write",
+          "checks": ["import math and random", "Use from x import y", "Find a module in the docs"]
+        },
+        {
+          "id": "s3.exceptions",
+          "title": "Handling errors",
+          "outcome": "Keep a program alive when something goes wrong",
+          "checks": ["try/except a specific error", "Use finally", "Raise your own error"]
+        },
+        {
+          "id": "s3.debug",
+          "title": "Debugging",
+          "outcome": "Find the bug instead of guessing",
+          "checks": ["Read a multi-frame traceback", "Add prints deliberately", "Bisect a problem by testing pieces"]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Objects and files",
+      "outcome": "You can model a thing, keep it on disk, and organise a project.",
+      "skills": [
+        {
+          "id": "s4.class",
+          "title": "Classes",
+          "outcome": "Model a thing that has state and behaviour",
+          "checks": ["Define a class and create instances", "Store state on self", "Choose a class over a dict"]
+        },
+        {
+          "id": "s4.methods",
+          "title": "Methods and __init__",
+          "outcome": "Give an object a setup step and actions",
+          "checks": ["Write __init__", "Call a method on an instance", "Explain what self is"]
+        },
+        {
+          "id": "s4.dunder",
+          "title": "Dunder methods",
+          "outcome": "Make your objects behave like built-ins",
+          "checks": ["__repr__ for readable debugging", "__eq__ for comparison", "__len__ or __iter__"]
+        },
+        {
+          "id": "s4.inherit",
+          "title": "Inheritance and composition",
+          "outcome": "Reuse behaviour without copy-paste",
+          "checks": ["Subclass and call super()", "Pick composition over inheritance", "Sketch a small class hierarchy"]
+        },
+        {
+          "id": "s4.files",
+          "title": "Files",
+          "outcome": "Read and write data on disk",
+          "checks": ["with open(...) as f", "Read lines safely", "Handle a missing file"]
+        },
+        {
+          "id": "s4.json",
+          "title": "JSON and persistence",
+          "outcome": "Save state between runs",
+          "checks": ["json.dump and json.load", "Convert an object to a dict", "Recover from a corrupted save file"]
+        },
+        {
+          "id": "s4.packages",
+          "title": "Projects and packages",
+          "outcome": "Split code across files that import each other",
+          "checks": ["Create a module", "Write __main__ guard", "Explain virtual environments"]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Building real things",
+      "outcome": "You can ship a program that other people can actually use.",
+      "skills": [
+        {
+          "id": "s5.turtle",
+          "title": "Turtle graphics",
+          "outcome": "Draw with code and see it happen",
+          "checks": ["Move and turn the turtle", "Draw a shape with a loop", "Change colours and fills"]
+        },
+        {
+          "id": "s5.flet",
+          "title": "Flet apps",
+          "outcome": "Put a real interface on your code",
+          "checks": ["Build a page with a button", "React to a click", "Lay out controls in a column or row"]
+        },
+        {
+          "id": "s5.pygame",
+          "title": "Pygame",
+          "outcome": "Make an animated, interactive game loop",
+          "checks": ["Write a game loop", "Handle keyboard input", "Draw and move sprites"]
+        },
+        {
+          "id": "s5.http",
+          "title": "APIs and requests",
+          "outcome": "Get data from the internet",
+          "checks": ["Make a GET request", "Read JSON from a response", "Handle a failed request"]
+        },
+        {
+          "id": "s5.testing",
+          "title": "Testing",
+          "outcome": "Prove your code works, and keep it working",
+          "checks": ["Write assert-based tests", "Test edge cases", "Refactor without fear"]
+        },
+        {
+          "id": "s5.structure",
+          "title": "Project structure",
+          "outcome": "Make a project someone else could pick up",
+          "checks": ["Separate data, logic and interface", "Write a README", "Use a requirements file"]
+        },
+        {
+          "id": "s5.capstone",
+          "title": "Capstone",
+          "outcome": "Build something from a blank file, alone",
+          "checks": ["Plan before coding", "Ship a working first version", "Review and improve it"]
+        }
+      ]
+    }
+  ]
+}
